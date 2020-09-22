@@ -1,4 +1,4 @@
-package com.belle-star.perscholas.casestudy.controllers;
+package com.github.perscholas.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
