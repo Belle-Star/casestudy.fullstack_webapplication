@@ -1,8 +1,8 @@
-package com.belle-star.perscholas.model;
+package com.github.perscholas.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GeneratedType;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
@@ -13,8 +13,17 @@ public class Client implements ClientInterface {
     private String name;
     private String email;
     private String password;
-    private Integer phonenumber;
+    private Integer phoneNumber;
 
+    @Override
+    public Long getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     @Override
     public String getName() {
@@ -31,7 +40,7 @@ public class Client implements ClientInterface {
         return email;
     }
 
-    @Overrde
+    @Override
     public void setEmail(String email) {
         this.email = email;
     }
@@ -41,18 +50,18 @@ public class Client implements ClientInterface {
         return password;
     }
 
-    @Overrde
+    @Override
     public void setPassword(String password) {
         this.password = password;
     }
 
     @Override
-    public Integer getPhonenumber() {
-        return phonenumber;
+    public Integer getPhoneNumber() {
+        return phoneNumber;
     }
 
-    @Overrde
-    public void setPhonenumber(Integer phonenumber) {
-        this.phonenumber = phonenumber;
+    @Override
+    public void setPhoneNumber(Integer phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }

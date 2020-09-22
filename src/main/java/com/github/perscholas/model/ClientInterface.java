@@ -1,13 +1,23 @@
-package com.belle-star.perscholas.model;
+package com.github.perscholas.model;
 
-public interface CourseInterface {
+public interface ClientInterface {
+    Long getId();
+
+    void setId(Long id);
+
     String getName();
-    String getEmail();
-    String getPassword();
-    Integer getPhonenumber();
 
-    void setName(Integer name);
+    void setName(String name);
+
+    String getEmail();
+
     void setEmail(String email);
+
+    String getPassword();
+
     void setPassword(String password);
-    void setPhoneNumber(String phoneNumber);
+
+    Integer getPhoneNumber();
+
+    void setPhoneNumber(Integer phoneNumber);
 }
